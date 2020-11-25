@@ -1,2 +1,3 @@
-message: "default profile: Hello from Kaizen Config Server!"
+stock:
+  greeting: "default  profile: Hello from Kaizen Config Server!"
 
