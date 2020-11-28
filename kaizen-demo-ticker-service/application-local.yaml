@@ -1,3 +1,7 @@
 spring:
   application:
     env: local
+
+stock:
+  greeting: 'local profile: Hello from Config Server'
+

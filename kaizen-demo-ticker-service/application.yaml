@@ -37,3 +37,7 @@ server:
       enabled: true
       pattern: '%{X-Forwarded-For}i %l %u %t "%r" %s %b "%{User-Agent}i" "%{Referer}i" %D'
       buffered: false
+
+stock:
+  greeting: 'stage profile: Hello from Config Server'
+
