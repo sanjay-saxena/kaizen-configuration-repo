@@ -40,5 +40,5 @@ server:
       buffered: false
 
 stock:
-  greeting: 'stage profile: Hello from Config Server'
+  greeting: 'default profile: Hello from Config Server'
 
