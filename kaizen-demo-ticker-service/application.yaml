@@ -5,7 +5,8 @@ spring:
 
 iex:
   baseUri: https://sandbox.iexapis.com/stable/
-  publishableToken: Tpk_38103adecdf744faa8ebc8eea6480106
+  publishableToken: ${kv.publishableToken}
+  dummyToken: ${kv.dummyToken}
 
 logging:
   config: "classpath:logback-console.xml"
