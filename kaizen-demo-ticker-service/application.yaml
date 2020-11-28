@@ -1,3 +1,39 @@
-stock:
-  greeting: "default  profile: Hello from Kaizen Config Server!"
+#Spring Config
+spring:
+  application:
+    env: default
 
+iex:
+  baseUri: https://sandbox.iexapis.com/stable/
+  publishableToken: Tpk_38103adecdf744faa8ebc8eea6480106
+
+logging:
+  config: "classpath:logback-console.xml"
+  level:
+    com.nvidia: DEBUG
+    org.springframework.web: DEBUG
+
+management:
+  endpoints:
+    web:
+      base-path: /admin
+      exposure:
+        include: ["health", "info"]
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9090
+
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain,application/javascript,text/css
+  use-forward-headers: true
+  tomcat:
+    basedir: /tmp/tomcat
+    accesslog:
+      enabled: true
+      pattern: '%{X-Forwarded-For}i %l %u %t "%r" %s %b "%{User-Agent}i" "%{Referer}i" %D'
+      buffered: false

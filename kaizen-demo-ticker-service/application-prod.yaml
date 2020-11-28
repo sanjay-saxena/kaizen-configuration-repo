@@ -1,0 +1,9 @@
+spring:
+  application:
+    env: prod
+
+logging:
+  config: "classpath:logback-spring.xml"
+  level:
+    com.nvidia: INFO
+    org.springframework.web: ERROR
