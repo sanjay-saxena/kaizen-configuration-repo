@@ -5,9 +5,9 @@ spring:
 
 iex:
   baseUri: https://sandbox.iexapis.com/stable/
-#  publishableToken: ${kv.publishableToken}
-  publishableToken: Tpk_38103adecdf744faa8ebc8eea6480106
-#  dummyToken: ${kv.dummyToken}
+  publishableToken: ${kv.publishableToken}
+#  publishableToken: Tpk_38103adecdf744faa8ebc8eea6480106
+  dummyToken: ${kv.dummyToken}
 
 
 logging:
