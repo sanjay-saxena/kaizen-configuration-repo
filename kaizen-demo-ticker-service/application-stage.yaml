@@ -2,10 +2,7 @@ spring:
   application:
     env: stage
 
-iex:
-  greeting: 'stage profile: Hello from Config Server'
-
-stock:
+demo:
   greeting: 'stage profile: Hello from Config Server'
 
 logging:

@@ -3,13 +3,13 @@ spring:
   application:
     env: default
 
-iex:
-  baseUri: https://sandbox.iexapis.com/stable/
-  publishableToken: ${kv.publishableToken}
-#  publishableToken: Tpk_38103adecdf744faa8ebc8eea6480106
+demo:
   dummyToken: ${kv.dummyToken}
   greeting: 'default profile: Hello from Config Server'
 
+iex:
+  baseUri: https://sandbox.iexapis.com/stable/
+  publishableToken: ${kv.publishableToken}
 
 logging:
   config: "classpath:logback-console.xml"
@@ -20,9 +20,9 @@ logging:
 management:
   endpoints:
     web:
-      base-path: /admin
+      base-path: /actuator
       exposure:
-        include: ["health", "info"]
+        include: "*"
   endpoint:
     health:
       show-details: always
@@ -41,7 +41,3 @@ server:
       enabled: true
       pattern: '%{X-Forwarded-For}i %l %u %t "%r" %s %b "%{User-Agent}i" "%{Referer}i" %D'
       buffered: false
-
-stock:
-  greeting: 'default profile: Hello from Config Server'
-

@@ -2,9 +2,5 @@ spring:
   application:
     env: local
 
-iex:
+demo:
   greeting: 'local profile: Hello from Config Server'
-
-stock:
-  greeting: 'local profile: Hello from Config Server'
-
