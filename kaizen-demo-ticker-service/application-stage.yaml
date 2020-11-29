@@ -3,7 +3,7 @@ spring:
     env: stage
 
 demo:
-  greeting: 'stage profile: Hello from Config Server'
+  greeting: "stage profile: Welcome to Kaizen Demo Ticker Service"
 
 logging:
   config: "classpath:logback-spring.xml"

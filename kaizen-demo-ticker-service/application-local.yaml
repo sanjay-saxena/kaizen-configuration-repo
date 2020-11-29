@@ -3,4 +3,4 @@ spring:
     env: local
 
 demo:
-  greeting: 'local profile: Howdy from Config Server'
+  greeting: "local profile: Welcome to Kaizen Demo Ticker Service"

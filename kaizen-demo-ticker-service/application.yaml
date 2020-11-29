@@ -5,7 +5,7 @@ spring:
 
 demo:
   dummyToken: ${kv.dummyToken}
-  greeting: 'default profile: Hello from Config Server'
+  greeting: "default profile: Welcome to Kaizen Demo Ticker Service"
 
 iex:
   baseUri: https://sandbox.iexapis.com/stable/
