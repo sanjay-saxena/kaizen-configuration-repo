@@ -8,6 +8,7 @@ iex:
   publishableToken: ${kv.publishableToken}
 #  publishableToken: Tpk_38103adecdf744faa8ebc8eea6480106
   dummyToken: ${kv.dummyToken}
+  greeting: 'default profile: Hello from Config Server'
 
 
 logging:
