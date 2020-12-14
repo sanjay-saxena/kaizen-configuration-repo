@@ -3,4 +3,4 @@ spring:
     env: local
 
 demo:
-  greeting: "git2: local profile: Welcome to Kaizen Demo Ticker Service!!"
+  greeting: "git3: local profile: Welcome to Kaizen Demo Ticker Service!!"
