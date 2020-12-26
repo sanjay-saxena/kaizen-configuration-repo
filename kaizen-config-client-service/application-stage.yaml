@@ -1,0 +1,12 @@
+spring:
+  application:
+    env: stage
+
+demo:
+  greeting: "gitl:stage profile: Welcome to Kaizen Config Client Service!!"
+
+logging:
+  config: "classpath:logback-spring.xml"
+  level:
+    com.nvidia: INFO
+    org.springframework.web: ERROR

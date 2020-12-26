@@ -1,0 +1,6 @@
+spring:
+  application:
+    env: local
+
+demo:
+  greeting: "git1: local profile: Welcome to Kaizen Config Client Service!!"
