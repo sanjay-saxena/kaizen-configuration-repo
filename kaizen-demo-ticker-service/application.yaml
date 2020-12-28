@@ -1,8 +1,3 @@
-#Spring Config
-spring:
-  application:
-    env: default
-
 demo:
   dummyToken: ${kv.dummyToken}
   greeting: "default profile: Welcome to Kaizen Demo Ticker Service!!"
@@ -11,33 +6,3 @@ iex:
   baseUri: https://sandbox.iexapis.com/stable/
   publishableToken: ${kv.publishableToken}
 
-logging:
-  config: "classpath:logback-console.xml"
-  level:
-    com.nvidia: DEBUG
-    org.springframework.web: DEBUG
-
-management:
-  endpoints:
-    web:
-      base-path: /actuator
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-  server:
-    port: 9090
-
-server:
-  port: 8080
-  compression:
-    enabled: true
-    mime-types: application/json,application/xml,text/html,text/xml,text/plain,application/javascript,text/css
-  use-forward-headers: true
-  tomcat:
-    basedir: /tmp/tomcat
-    accesslog:
-      enabled: true
-      pattern: '%{X-Forwarded-For}i %l %u %t "%r" %s %b "%{User-Agent}i" "%{Referer}i" %D'
-      buffered: false
